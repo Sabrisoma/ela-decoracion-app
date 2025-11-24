@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../componentes/ItemDetail"
 
+
 const products = [
     {
         id: '01',
@@ -51,7 +52,7 @@ const products = [
         description: 'Mate Imperial de Algarrobo con Virola de Acero, diseño Ela',
         price: '20000',
         stock: '10',
-        category: 'Mates Imperiales',
+        category: 'matesimperiales',
         img: '../img/imperialela.jpeg',
     },
 
@@ -61,7 +62,7 @@ const products = [
         description: 'Mate Imperial de Algarrobo con Virola de Acero, diseño Mila',
         price: '20000',
         stock: '10',
-        category: 'Mates Imperiales',
+        category: 'matesimperiales',
         img: '../img/imperialmila.jpeg',
     },
 
@@ -71,7 +72,7 @@ const products = [
         description: 'Mate de Acero Inoxidable, diseño Gardenia',
         price: '20000',
         stock: '10',
-        category: 'Mates de Acero',
+        category: 'matesdeacero',
         img: '../img/mategardenia.jpeg',
     },
 
@@ -81,7 +82,7 @@ const products = [
         description: 'Mate de Acero Inoxidable, diseño Megara',
         price: '20000',
         stock: '10',
-        category: 'Mates de Acero',
+        category: 'matesdeacero',
         img: "../img/megaraacero.jpeg",
     },
     {
@@ -99,7 +100,7 @@ const products = [
         description: 'Mate de Acero Inoxidable, diseño Amanda',
         price: '20000',
         stock: '10',
-        category: 'Mates de Acero',
+        category: 'matesdeacero',
         img: "../img/aceroamanda.jpeg",
     },
     {
@@ -117,7 +118,7 @@ const products = [
         description: 'Mate Imperial de algarrobo, diseño Lola',
         price: '20000',
         stock: '10',
-        category: 'Mates Imperiales',
+        category: 'matesimperiales',
         img: "../img/imperialola.png",
     }
 ]
