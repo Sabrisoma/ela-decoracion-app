@@ -1,4 +1,6 @@
 import React from 'react'
+import Item from './Item'
+
 
 const ItemDetail= ({detalle}) => {
     return (
@@ -6,8 +8,9 @@ const ItemDetail= ({detalle}) => {
             <h2> Detalle del producto: {detalle.name}</h2>
             <img src={detalle.img} alt={detalle.name} className='detail-img'/>
             <p>${detalle.price},00</p>
-            <p>{detalle.description}</p>          
-
+            <p>{detalle.description}</p>   
+            <p>Stock disponible: {detalle.stock} unidades</p>
+            
         </div>
     )
 }
