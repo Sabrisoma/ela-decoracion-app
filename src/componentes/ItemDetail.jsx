@@ -6,7 +6,7 @@ const ItemDetail= ({detalle}) => {
             <h2> Detalle del producto: {detalle.name}</h2>
             <img src={detalle.img} alt={detalle.name} className='detail-img'/>
             <p>${detalle.price},00</p>
-            <p>{detalle.description}</p>
+            <p>{detalle.description}</p>          
 
         </div>
     )
