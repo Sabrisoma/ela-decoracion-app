@@ -1,3 +1,5 @@
+// agregado para entrega final
+
 //import { useState } from 'react'
 
 //const ItemCount = ({ stock }) => {
