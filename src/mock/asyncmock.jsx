@@ -107,7 +107,7 @@ const products = [
         id: '11',
         name: 'Agenda Lola Semanal',
         description: 'Agenda semanal, semana a la vista. Diseño Lola',
-        price: '27200',
+        price: '21700',
         stock: '2',
         category: 'agendas',
         img: "../img/agendalola.jpeg",
