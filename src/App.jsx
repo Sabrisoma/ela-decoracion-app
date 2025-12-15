@@ -1,13 +1,10 @@
-//import Navbar from './componentes/Navbar'
+import NavBarBs from './componentes/NavBarBS';
 import ItemListContainer from './componentes/ItemListContainer'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NavBarBs from './componentes/NavBarBS';
-
-
-
+import ItemCount from './componentes/ItemCount';
 
 function App() {
 

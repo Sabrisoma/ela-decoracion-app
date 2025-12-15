@@ -3,6 +3,7 @@ import { getProducts } from "../mock/asyncmock.jsx";
 import ItemList from './ItemList.jsx';
 import { useParams } from 'react-router-dom';
 
+
 const ItemListContainer = (props) => {
     const [data, setData] = useState([])
     const { type } = useParams()

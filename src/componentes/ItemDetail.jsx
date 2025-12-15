@@ -1,5 +1,6 @@
 import React from 'react'
 import Item from './Item'
+import ItemCount from './ItemCount'
 
 
 const ItemDetail= ({detalle}) => {
@@ -10,8 +11,9 @@ const ItemDetail= ({detalle}) => {
             <p>${detalle.price},00</p>
             <p>{detalle.description}</p>   
             <p>Stock disponible: {detalle.stock} unidades</p>
-            
+            <ItemCount stock={detalle.stock}/>         
         </div>
+
     )
 }
 
