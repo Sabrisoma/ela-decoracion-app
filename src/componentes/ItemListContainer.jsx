@@ -2,13 +2,17 @@ import { useState, useEffect } from 'react'
 import { getProducts } from "../mock/asyncmock.jsx";
 import ItemList from './ItemList.jsx';
 import { useParams } from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner';
 
 
 const ItemListContainer = (props) => {
     const [data, setData] = useState([])
+    const [loading, setLoading] = useState(false)
     const { type } = useParams()
 
     useEffect(() => {
+        setLoading(true)
+        const prodCollection = type ? getProducts().then((res) => res.filter((prod) => prod.category === type)) : getProducts();
         getProducts()
             .then((res) => {
                 if (type) {
@@ -18,7 +22,16 @@ const ItemListContainer = (props) => {
                     setData(res)
                 }
             })
+            .catch((error) => console.log(error))
+            .finally(() => setLoading(false))
     }, [type])
+
+    if(loading){
+        return <div style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh'}}>
+            <Spinner animation="grow" variant="info" />
+            </div>
+    }
+
 
     return (
         <div>
