@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { getProducts } from "../mock/asyncmock.jsx";
 import ItemList from './ItemList.jsx';
 import { useParams } from 'react-router-dom';
-import Spinner from 'react-bootstrap/Spinner';
+import LoaderComponent from './loaderComponent.jsx';
 
 
 const ItemListContainer = (props) => {
@@ -18,7 +18,7 @@ const ItemListContainer = (props) => {
                 if (type) {
                     setData(res.filter((prod) => prod.category === type))
 
-                } else{
+                } else {
                     setData(res)
                 }
             })
@@ -26,20 +26,30 @@ const ItemListContainer = (props) => {
             .finally(() => setLoading(false))
     }, [type])
 
-    if(loading){
-        return <div style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh'}}>
-            <Spinner animation="grow" variant="info" />
-            </div>
-    }
+    //if(loading){
+    //return <div style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh'}}>
+    // <Spinner animation="grow" variant="info" />
+    //  <span>Cargando productos...</span>
+    //  </div>
+    //}
 
 
     return (
-        <div>
-            <h1 style={{ color: '#062242' }}>{props.mensaje}</h1>
-            <ItemList data={data} />
+        <>
+            {
+                loading
+                    ? <LoaderComponent text={type ? 'Cargando Categoria...' : 'Cargando productos...'}/>
+                    : <div>
+                        <h1 style={{ color: '#062242' }}>{props.mensaje}</h1>
+                        <ItemList data={data} />
 
 
-        </div>
+                    </div>
+            }
+        </>
+
+
     )
 }
+
 export default ItemListContainer
