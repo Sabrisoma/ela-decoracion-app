@@ -26,14 +26,6 @@ const ItemListContainer = (props) => {
             .finally(() => setLoading(false))
     }, [type])
 
-    //if(loading){
-    //return <div style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh'}}>
-    // <Spinner animation="grow" variant="info" />
-    //  <span>Cargando productos...</span>
-    //  </div>
-    //}
-
-
     return (
         <>
             {
