@@ -14,6 +14,7 @@ const CartView = () => {
                 {
                     cart.map((compra) => (
                         <div key={compra.id} style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%', padding:'2rem'}}>
+                            <img src={compra.img} alt={compra.name} style={{width:'100px', height:'100px', objectFit:'cover'}}/>
                             <span>{compra.name}</span>
                             <span>Precio:${compra.price},00</span>
                             <span>Cantidad:{compra.quantity}</span>

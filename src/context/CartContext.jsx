@@ -36,6 +36,10 @@ export const CartProvider = ({ children }) => {
 
     }
 
+    const total=()=>{}
+
+    const cartQuantity=()=>{}
+
     const itemQuantity = (id) => {
         const itemInCart = cart.find((prod) => prod.id === id);
         if(itemInCart){

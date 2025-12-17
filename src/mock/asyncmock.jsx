@@ -8,17 +8,17 @@ import ItemDetail from "../componentes/ItemDetail"
 const products = [
     {
         id: '01',
-        name: 'Agenda Blanca Semanal',
+        name: 'Agenda Blanca Semanal ✿',
         description: 'Agenda semana a la vista. Diseño Blanca',
         price: 21700,
         stock: 3,
-        category: 'agendas',
+        category: 'agendas ',
         img: '../img/agendablanca.png',
     },
 
     {
         id: '02',
-        name: 'Agenda Ela semanal',
+        name: 'Agenda Ela semanal ✿',
         description: 'Agenda semana a la vista. Diseño Ela',
         price: 21700,
         stock:5,
@@ -28,7 +28,7 @@ const products = [
   
     {
         id: '03',
-        name: 'Combo Agnes',
+        name: 'Combo Agnes ✿',
         description: 'Combo de Algarrobo. Tabla + Mate, diseño Agnes',
         price: 16400,
         stock:2,
@@ -38,7 +38,7 @@ const products = [
 
     {
         id: '04',
-        name: 'Combo Ela',
+        name: 'Combo Ela ✿',
         description: 'Combo de Algarrobo. Mate + Azucarera/Yerbera, diseño Ela',
         price:18000,
         stock:1,
@@ -48,7 +48,7 @@ const products = [
 
     {
         id: '05',
-        name: 'Imperial Ela',
+        name: 'Imperial Ela ✿',
         description: 'Mate Imperial de Algarrobo con Virola de Acero, diseño Ela',
         price:28000,
         stock:4,
@@ -58,7 +58,7 @@ const products = [
 
     {
         id: '06',
-        name: 'Imperial Mila',
+        name: 'Imperial Mila ✿',
         description: 'Mate Imperial de Algarrobo con Virola de Acero, diseño Mila',
         price:28000,
         stock:4,
@@ -67,7 +67,7 @@ const products = [
     },
     {
         id: '07',
-        name: 'Mate Gardenia',
+        name: 'Mate Gardenia ✿',
         description: 'Mate de Acero Inoxidable, diseño Gardenia',
         price:17200,
         stock:3,
@@ -77,7 +77,7 @@ const products = [
 
     {
         id: '08',
-        name: 'Mate Megara',
+        name: 'Mate Megara ✿',
         description: 'Mate de Acero Inoxidable, diseño Megara',
         price:17200,
         stock:2,
@@ -86,7 +86,7 @@ const products = [
     },
     {
         id: '09',
-        name: 'Combo Tina',
+        name: 'Combo Tina ✿',
         description: 'Combo de Algarrobo. Tabla + Mate, diseño Tina',
         price:15200,
         stock:2,
@@ -95,7 +95,7 @@ const products = [
     },
     {
         id: '10',
-        name: 'Mate Amanda',
+        name: 'Mate Amanda ✿',
         description: 'Mate de Acero Inoxidable, diseño Amanda',
         price:17200,
         stock:2,
@@ -104,7 +104,7 @@ const products = [
     },
     {
         id: '11',
-        name: 'Agenda Lola Semanal',
+        name: 'Agenda Lola Semanal ✿',
         description: 'Agenda semanal, semana a la vista. Diseño Lola',
         price:21700,
         stock:2,
@@ -113,7 +113,7 @@ const products = [
     },
     {
         id: '12',
-        name: 'Imperial Lola',
+        name: 'Imperial Lola ✿',
         description: 'Mate Imperial de algarrobo, diseño Lola',
         price:28000,
         stock:3,
