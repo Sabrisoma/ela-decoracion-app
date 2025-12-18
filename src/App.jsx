@@ -8,6 +8,8 @@ import ItemCount from './componentes/ItemCount';
 import { CartProvider } from './context/CartContext';
 import CartContainer from './componentes/CartContainer';
 import Checkout from './componentes/Checkout';
+import CarrouselBS from './componentes/CarrouselBS.jsx';
+
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
     <BrowserRouter>
       <CartProvider>
        <NavBarBs />
+       <CarrouselBS/>
         <Routes>
           <Route path='/' element={<ItemListContainer mensaje={'Bienvenidos a Ela Decoracion'} />} />
           <Route path='/category/:type' element={<ItemListContainer />} />
