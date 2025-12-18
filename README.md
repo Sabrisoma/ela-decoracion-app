@@ -1,5 +1,7 @@
 Ela Decoración 🧉🌸
 
+![eladecoracion] (/public/bannerela.jpg)
+
 Este proyecto fue realizado como parte del curso de React, con el objetivo de aplicar los conceptos fundamentales del framework mediante el desarrollo de un ecommerce funcional.
 
 La aplicación está inspirada en mi emprendimiento personal Ela Decoración, dedicado a la creación y comercialización de mates pintados a mano y productos artesanales.
