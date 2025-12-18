@@ -7,19 +7,19 @@ function CarrouselBS() {
         <Carousel>
             <Carousel.Item>
                 <ExampleCarouselImage />
-                <img src='../banner1.png' alt='banner bienvenida' style={{ width: '100%' }} />
+                <img src='../banner1.png' alt='banner bienvenida' style={{ width: '100%', height: '60vh', objectFit: 'contain'}} />
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <ExampleCarouselImage />
-                <img src='../baner2.png' alt='banner saludo' style={{ width: '100%' }} />
+                <img src='../baner2.png' alt='banner saludo' style={{ width: '100%', height: '60vh', objectFit: 'contain'}} />
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <ExampleCarouselImage />
-                <img src='../bannerela.jpg' alt='banner logo' style={{ width: '100%' }} />
+                <img src='../bannerela.jpg' alt='banner logo' style={{ width: '100%', height: '60vh', objectFit: 'contain'}} />
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>

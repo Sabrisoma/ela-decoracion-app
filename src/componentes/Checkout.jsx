@@ -74,18 +74,12 @@ const Checkout = () => {
                         <form className='p-4 border rounded shadow-sm bg-light' onSubmit={finalizarCompra}>
 
                             <input className='form-control' name='name' type='text' placeholder='Ingrese su nombre' onChange={buyerData} />
-
                             <input className='form-control' name='lastname' type='text' placeholder='Ingrese su apellido' onChange={buyerData} />
-
                             <input className='form-control' name='email' type='email' placeholder='Ingrese su correo' onChange={buyerData} />
-
                             <input className='form-control' name='email2' type='email' placeholder='Repita su correo' onChange={(e) => setValidMail(e.target.value)} />
-
                             <button type='submit' className='btn btn-success' disabled={process}>{process ? 'Procesando Orden...' : 'Generar Orden'}</button>
                         </form>
-
-
-
+                        
                     </div>
             }
         </>

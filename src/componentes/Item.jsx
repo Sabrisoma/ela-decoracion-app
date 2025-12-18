@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Item = ({ prod }) => {
     return (
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={prod.img} className='card-img' />
+        <Card style={{ width: '18rem', margin: '1rem' }}>
+            <Card.Img variant="top" src={prod.img} className='card-img' style={{ height: '250px', objectFit: 'cover' }} />
             <Card.Body>
                 <Card.Title>{prod.name}</Card.Title>
                 <Card.Text>
