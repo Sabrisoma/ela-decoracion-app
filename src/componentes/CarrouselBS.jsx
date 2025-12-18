@@ -7,7 +7,7 @@ function CarrouselBS() {
         <Carousel>
             <Carousel.Item>
                 <ExampleCarouselImage />
-                <img src='../banner1.png' alt='banner bienvenida' style={{ width: '100%', objectFit: 'cover' }} />
+                <img src='../banner1.png' alt='banner bienvenida' style={{ width: '100%' }} />
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>

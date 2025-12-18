@@ -2,12 +2,32 @@ import React from 'react'
 import { CartContext } from '../context/CartContext';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-
-
+import Swal from 'sweetalert2';
 
 
 const CartView = () => {
-    const { cart, removeItem, clear, total} = useContext(CartContext);
+    const { cart, removeItem, clear, total } = useContext(CartContext);
+
+    const confirmarEliminar = (id) => {
+        Swal.fire({
+            title: '¿Estás seguro que deseas eliminar tu producto del carrito?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#ee85b3ff',
+            cancelButtonColor: '#9dd0e7ff',
+            confirmButtonText: 'Sí, eliminar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                removeItem(id)
+                Swal.fire(
+                    'Eliminado',
+                    'El producto fue eliminado del carrito',
+                    'success'
+                )
+            }
+        })
+    }
+
     return (
         <div>
             <h1> Tu carrito 🛒</h1>
@@ -20,7 +40,13 @@ const CartView = () => {
                             <span>Precio:${compra.price},00</span>
                             <span>Cantidad:{compra.quantity}</span>
                             <span>Precio final:${compra.price * compra.quantity},00</span>
-                            <button className='btn btn-danger' onClick={() => removeItem(compra.id)}>Eliminar</button>
+
+                            <button
+                                className='btn btn-danger'
+                                onClick={() => confirmarEliminar(compra.id)}
+                            >
+                                Eliminar
+                            </button>
                         </div>
                     ))
                 }
