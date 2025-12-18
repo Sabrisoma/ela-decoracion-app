@@ -1,6 +1,6 @@
 Ela Decoración 🧉🌸
 
-![eladecoracion] (/public/bannerela.jpg)
+![eladecoracion](/public/bannerela.jpg)
 
 Este proyecto fue realizado como parte del curso de React, con el objetivo de aplicar los conceptos fundamentales del framework mediante el desarrollo de un ecommerce funcional.
 
