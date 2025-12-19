@@ -1,5 +1,4 @@
 import { useState, useEffect, use } from 'react'
-import { getProducts } from "../mock/asyncmock.jsx";
 import ItemList from './ItemList.jsx';
 import { useParams } from 'react-router-dom';
 import LoaderComponent from './loaderComponent.jsx';
@@ -12,7 +11,7 @@ const ItemListContainer = (props) => {
     const [loading, setLoading] = useState(false)
     const { type } = useParams()
 
-    // firebase/
+    
     useEffect(() => {
         setLoading(true)
         const prodCollection = type ? query(collection(db, "productos"), where("category", "==", type)) : collection(db, "productos")

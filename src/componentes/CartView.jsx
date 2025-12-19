@@ -10,7 +10,7 @@ const CartView = () => {
 
     const confirmarEliminar = (id) => {
         Swal.fire({
-            title: '¿Estás seguro que deseas eliminar tu producto del carrito?',
+            title: '¿Estás seguro que deseas eliminar el producto del carrito?',
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#ee85b3ff',

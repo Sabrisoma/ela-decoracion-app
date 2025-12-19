@@ -2,15 +2,15 @@ Ela Decoración 🧉🌸
 
 ![eladecoracion](/public/bannerela.jpg)
 
-Este proyecto fue realizado como parte del curso de React, con el objetivo de aplicar los conceptos fundamentales del framework mediante el desarrollo de un ecommerce funcional.
+Este hermoso proyecto fue realizado para el curso de React en mi Carrera de Desarrollo Frontend React, con el objetivo de aplicar los conceptos fundamentales mediante el desarrollo de un ecommerce funcional.
 
-La aplicación está inspirada en mi emprendimiento personal Ela Decoración, dedicado a la creación y comercialización de mates pintados a mano y productos artesanales.
+La aplicación está inspirada en mi emprendimiento personal, dedicado a la creación y comercialización de mates pintados a mano y productos artesanales.
 
 🛍️ Sobre el proyecto
 
-Ela Decoración es un ecommerce orientado a la venta de productos artesanales pintados a mano, principalmente:
+Ela Decoración es un ecommerce orientado a la venta de productos artesanales, en donde se destacan los siguientes productos:
 
-Mates en distintos materiales:
+🌸 Mates de:
 
 - Acero
 
@@ -20,7 +20,9 @@ Mates en distintos materiales:
 
 - Calabaza / cuero
 
-- Agendas artesanales
+🌸 Y otros productos artesanales como:
+
+- Agendas de bambu
 
 - Velas de soja
 
@@ -48,7 +50,7 @@ Durante el desarrollo de este proyecto, el foco estuvo puesto en crear una web p
 
 🌐 Versión online
 
-Si desea ver el proyecto funcionando de manera online, puede acceder al siguiente link:
+Si queres ver mi proyecto funcionando de manera online, podes hacerlo mediante el siguiente link:
 [https://ela-decoracion-app.vercel.app/]
 
 📚 Librerías utilizadas

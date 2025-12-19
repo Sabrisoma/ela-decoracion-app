@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 import { db } from '../service/firebase'
 import { Link } from 'react-router-dom'
 import EmptyCart from './EmptyCart'
+import { useContext, useState } from 'react'
 
 
 
@@ -25,7 +25,6 @@ const Checkout = () => {
 
     }
 
-    console.log(buyer)
     const finalizarCompra = (e) => {
         e.preventDefault()
         if (!buyer.name || !buyer.lastname || !buyer.email || !validMail) {
@@ -63,9 +62,9 @@ const Checkout = () => {
             {
                 orderId
                     ? <div>
-                        <h2>Muchas gracias por su compra</h2>
+                        <h2>Muchas gracias por tu compra 💗</h2>
                         <h4>Su orden es: {orderId}</h4>
-                        <Link className='btn btn-dark' to='/'>Volver a Home</Link>
+                        <Link className='btn btn-info' to='/'>Volver a la tiendita online 💗</Link>
                     </div>
                     : <div>
                         <h1>Complete por favor los datos</h1>

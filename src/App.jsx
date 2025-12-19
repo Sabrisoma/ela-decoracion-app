@@ -4,7 +4,6 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ItemCount from './componentes/ItemCount';
 import { CartProvider } from './context/CartContext';
 import CartContainer from './componentes/CartContainer';
 import Checkout from './componentes/Checkout';

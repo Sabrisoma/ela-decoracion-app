@@ -21,15 +21,7 @@ const ItemDetail = ({ detalle }) => {
             </h2>
 
             <div style={{ textAlign: 'center' }}>
-                <img
-                    src={detalle.img}
-                    alt={detalle.name}
-                    style={{
-                        width: '100%',
-                        maxWidth: '400px',
-                        objectFit: 'contain'
-                    }}
-                />
+                <img src={detalle.img} alt={detalle.name} style={{width: '100%',maxWidth: '400px',objectFit: 'contain' }} />
             </div>
 
 
